@@ -21,7 +21,7 @@ resource "aws_instance" "Awsserver"{
         Name= "terraform first instance"
     }
 }
-resource "aws_security_group" "instance" { 
+resource "aws_security_group" "scrinstance" { 
    name        = "terraform -sercurity"
    description = "Allow TLS inbound traffic"
    ingress {
