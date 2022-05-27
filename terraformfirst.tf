@@ -18,12 +18,12 @@ resource "aws_instance" "Awsserver"{
                 EOF
 
     tags ={
-        Name= "terraform first instance"
+        Name= "terraform third instance"
     }
 }
-resource "aws_security_group" "scrinstance" { 
+resource "aws_security_group" "instance" {
    name        = "terraform -sercurity"
-   description = "Allow TLS inbound traffic"
+   description = "Allow inbound traffic"
    ingress {
     from_port        = 80
     to_port          = 80
@@ -35,8 +35,3 @@ resource "aws_security_group" "scrinstance" {
     to_port          = 0
     protocol         = "-1"
     cidr_blocks      = ["0.0.0.0/0"]
-    ipv6_cidr_blocks = ["::/0"]
-  }
-}
-
-
