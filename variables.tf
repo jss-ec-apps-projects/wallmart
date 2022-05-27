@@ -5,6 +5,6 @@ variable "access_key"{
 variable "secret_key"{
     default ="CJREvi7ZPO+mHo9UcrJAI6KKRNkezO6001pVTjVZ"
 }
-variable "ami"{
+variable "instance_type"{
     default ="t2.micro"
 }
